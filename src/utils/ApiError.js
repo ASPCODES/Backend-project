@@ -12,6 +12,8 @@ class ApiError extends Error {
         this.success = false
         this.errors = errors
 
+    // This code checks to find which files occured an error, Basically it defined error 
+    // in a proper and structured manner
         if (stack) {
             this.stack = stack
         } else {
