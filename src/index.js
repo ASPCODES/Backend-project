@@ -21,10 +21,10 @@ dotenv.config({
 
 connectDB()
 .then(() => {
-    app.on((error) => {
-        console.log("Error ",error);
-        throw error;
-    })
+    // app.on((error) => {
+    //     console.log("Error ",error);
+    //     throw error;
+    // })
     app.listen(process.env.PORT || 8000, () => {
         console.log(`App is running on Port: ${process.env.PORT}`);
     })
